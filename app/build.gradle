@@ -94,6 +94,16 @@ dependencies {
     // Image loading
     implementation 'com.github.bumptech.glide:glide:4.11.0'
 
+    // Util Collection (CrazyLegend)
+    def util_collection_version = "2.0.8"
+    implementation "com.github.CraZyLegenD.Set-Of-Useful-Kotlin-Extensions-and-Helpers:coroutines:$util_collection_version"
+    implementation "com.github.CraZyLegenD.Set-Of-Useful-Kotlin-Extensions-and-Helpers:customviews:$util_collection_version"
+    implementation "com.github.CraZyLegenD.Set-Of-Useful-Kotlin-Extensions-and-Helpers:database:$util_collection_version"
+    implementation "com.github.CraZyLegenD.Set-Of-Useful-Kotlin-Extensions-and-Helpers:kotlinextensions:$util_collection_version"
+    implementation "com.github.CraZyLegenD.Set-Of-Useful-Kotlin-Extensions-and-Helpers:moshi:$util_collection_version"
+    implementation "com.github.CraZyLegenD.Set-Of-Useful-Kotlin-Extensions-and-Helpers:recyclerview:$util_collection_version"
+
+
     // Testing
     testImplementation 'junit:junit:4.13'
     testImplementation 'org.mockito:mockito-inline:2.28.2'
