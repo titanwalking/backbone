@@ -1,3 +1,3 @@
-# Guardian News Demo
+# Backbone
 
-This is a sample application built on [RainbowCake](https://github.com/rainbowcake/).
+This is a skeleton application built on [RainbowCake](https://github.com/rainbowcake/).
