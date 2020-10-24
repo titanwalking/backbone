@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import co.zsmb.rainbowcake.guardiandemo.R
 import co.zsmb.rainbowcake.guardiandemo.ui.list.ListPresenter.NewsItem
-import com.bumptech.glide.Glide
+import coil.load
 import kotlinx.android.synthetic.main.item_news.view.*
 
 class NewsAdapter : ListAdapter<NewsItem, NewsAdapter.ViewHolder>(NewsItemComparator) {
@@ -45,9 +45,7 @@ class NewsAdapter : ListAdapter<NewsItem, NewsAdapter.ViewHolder>(NewsItemCompar
             headline.text = item.headline
             trail.text = Html.fromHtml(item.trail)
 
-            Glide.with(image)
-                .load(item.thumbnailUrl)
-                .into(image)
+            image.load(item.thumbnailUrl)
         }
     }
 

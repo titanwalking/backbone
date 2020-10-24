@@ -13,7 +13,7 @@ import co.zsmb.rainbowcake.guardiandemo.ui.saved.SavedFragment
 import co.zsmb.rainbowcake.navigation.extensions.applyArgs
 import co.zsmb.rainbowcake.navigation.extensions.requireString
 import co.zsmb.rainbowcake.navigation.navigator
-import com.bumptech.glide.Glide
+import coil.load
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_detail.*
 
@@ -71,9 +71,7 @@ class DetailFragment : RainbowCakeFragment<DetailViewState, DetailViewModel>() {
                 byline.text = Html.fromHtml(news.byline)
                 contentText.text = Html.fromHtml(news.content)
 
-                Glide.with(articleImage)
-                    .load(news.imageUrl)
-                    .into(articleImage)
+                articleImage.load(news.imageUrl)
 
                 val iconRes = if (news.isSaved) R.drawable.ic_star else R.drawable.ic_star_border
                 toolbar.menu.getItem(0).setIcon(iconRes)
